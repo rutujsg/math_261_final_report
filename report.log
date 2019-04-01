@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.3)  31 MAR 2019 14:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.3)  1 APR 2019 19:36
 entering extended mode
 **./report.tex
 (report.tex
@@ -337,6 +337,116 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen167
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count198
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count199
+
+("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen168
+\Fld@menulength=\count266
+\Field@Width=\dimen169
+\Fld@charsize=\dimen170
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip52
+)
 
 LaTeX Warning: Unused global option(s):
     [1in].
@@ -344,18 +454,20 @@ LaTeX Warning: Unused global option(s):
 (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -365,15 +477,15 @@ LaTeX Font Info:    ... okay on input line 13.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-13.87262pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -395,57 +507,22 @@ LaTeX Font Info:    ... okay on input line 13.
 ("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\context\base\mkii\supp
 -pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count196
-\scratchdimen=\dimen167
+\scratchcounter=\count272
+\scratchdimen=\dimen171
 \scratchbox=\box46
-\nofMPsegments=\count197
-\nofMParguments=\count198
+\nofMPsegments=\count273
+\nofMParguments=\count274
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count199
-\MPscratchDim=\dimen168
-\MPnumerator=\count266
-\makeMPintoPDFobject=\count267
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen172
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
 \everyMPtoPDFconversion=\toks22
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
@@ -454,39 +531,70 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+\AtBeginShipoutBox=\box47
+Package hyperref Info: Link coloring OFF on input line 16.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count278
+)
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
+
+(report.out) (report.out)
+\@outlinefile=\write3
+\openout3 = `report.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (report.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
 ) [1
 
 {C:/Users/Rutuj Gavankar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (r
-eport.aux) ) 
+eport.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
+ (report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 7DD343EE551A2A3C3E32C96F40673A33;237.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
+ ) 
 Here is how much of TeX's memory you used:
- 12986 strings out of 493312
- 231881 string characters out of 3138871
- 267116 words of memory out of 3000000
- 16467 multiletter control sequences out of 15000+200000
- 541094 words of font info for 58 fonts, out of 3000000 for 9000
+ 16527 strings out of 493312
+ 285768 string characters out of 3138871
+ 352351 words of memory out of 3000000
+ 19972 multiletter control sequences out of 15000+200000
+ 541748 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,9n,65p,383b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (1 page, 62827 bytes).
+ 47i,15n,65p,348b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on report.pdf (2 pages, 128316 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

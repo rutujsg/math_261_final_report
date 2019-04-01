@@ -1,13 +1,12 @@
 \documentclass[12pt,1in]{article}
-\usepackage{amsmath, amssymb, amssymb}
+\usepackage{amsmath, amssymb}
 \usepackage{physics}
-\usepackage{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{cite}
 \usepackage{booktabs}
 \usepackage{graphicx}
 
-%opening
-\title{Study of non-linear differential equations in Hamiltonian and dissipative systems \\ {\small MATH 26600}}
+\title{Analyzing Non-linear Ordinary Differential Equations\\ {\small MATH 26600}}
 \author{Rutuj Gavankar}
 \date{}
 \begin{document}
@@ -15,22 +14,85 @@
 \maketitle
 
 \section{Introduction}
-A system of linear ordinary differential equations can be analyzed analytically in most cases. The solution to such a system is well known. This report discusses the techniques to analyze a system of non-linear ordinary differential equations by analytical and numerical methods. The case of a first-order Hamiltonian system and a dissipative system will be analyzed.
-\subsection{Analyzing a system of non-linear ODE's }
-\begin{enumerate}
-\item 
+
+\subsection{Linearizing a system of ODE's}
+
+
 Let 
 \begin{align}
 \derivative{x}{t} &= F(x, y) \\
 \derivative{y}{t} &= G(x , y)
 \end{align}
-be a system of first-order differential equations. To find the steady state of the 
+be a system of first-order differential equations. The steady-state solutions of this system are the solutions for which  $x(t)$ and $y(t)$ are invariant. That is to say,
+\begin{align}
+    F(x,y) &= 0 \\
+    G(x,y) &= 0
+\end{align}
+We can analyzing this system around these equilibrium points by making linear approximations of the function around these points. Using first order Taylor series expansion for $F$ and $G$ we get
+\begin{align}
+    F(x,y) &\approx F(x_0, y_0) + F_x(x_0, y_0)(x - x_0) + F_y(x_0, y_0)(y - y_0) \\
+    G(x,y) &\approx G(x_0, y_0) + G_x(x_0, y_0)(x - x_0) + G_y(x_0, y_0)(y - y_0)
+\end{align}
+Where $x_0$ and $y_0$ are the equilibrium points for the system. The system can be re-written in matrix-vector notation as 
+\begin{align}
+    \begin{bmatrix}
+    \derivative{x}{t} \\
+    \derivative{y}{t}
+    \end{bmatrix} &= 
+    \begin{bmatrix}
+    F_x(x_0, y_0) & F_y(x_0, y_0)\\
+    G_x(x_0, y_0) & G_y(x_0, y_0)
+    \end{bmatrix}
+    \begin{bmatrix}
+    x - x_0 \\
+    y - y_0
+    \end{bmatrix}
+\end{align}Now, let $x - x_0$ be $u$ and $y - y_0$ be $v$, and $\Vec{v}$ be the vector $\left<u ,v\right>$
+\begin{align}
+    \therefore \derivative{\Vec{v}}{t} &= J\Vec{v} \label{eq:vec_mat}
+\end{align}
+Where $J$ is the Jacobian matrix, $$J = \begin{bmatrix}
+    F_x(x_0, y_0) & F_y(x_0, y_0)\\
+    G_x(x_0, y_0) & G_y(x_0, y_0)
+    \end{bmatrix}$$
+Now, Eq. \ref{eq:vec_mat} is an eigenvalue problem. The local stability and the behaviour of the system around the equilibrium points can be infered from the eigenvalues of $J$.
 
-\end{enumerate}
+Example \cite[p.~488]{diff_eq}
+
+\begin{align*}
+    \derivative{x}{t} &= x(10 - x - y) \\
+    \derivative{y}{t} &= y(30 - 2x - y)
+\end{align*}
+The Jacobian of the system is 
+\begin{align*}
+    J = \begin{bmatrix}
+    10 - 2x - y & -x \\
+    -2y & 30 - 2x - 2y
+    \end{bmatrix}
+\end{align*}
+The system has equilibrium points at $(0,0)$, $(10,0)$, $(0,30)$ and $(20,-10)$. Analyzing the system at $(0,0)$,
+\begin{align*}
+    J|_{(0,0)} &= \begin{bmatrix}
+    10 & 0 \\
+    0 & 30
+    \end{bmatrix}
+\end{align*}}
+Since $J$ is a diagonal matrix, the eigenvalues of $J$ are the elements along its diagonal. That is, $\lambda = \{ 10, 30 \}$. Since both the eigenvalues are real and positive, the point $(0,0)$ is a nodal-source.
+Similarly, analyzing the system at $(10,0)$,
+\begin{align*}
+    J|_{(10,0)} &= 
+    \begin{bmatrix}
+    -10 & -10\\
+    0 & 10 
+    \end{bmatrix}
+\end{align*}
+The eigenvalues of $J$ are 
+
+
 \section{Hamiltonian Systems}
 \section{Dissipative Systems}
-\bibliographystyle{ieeetr}
-\bibliography{citations}
 
+\bibliography{citations}
+\bibliographystyle{plain}
 
 \end{document}

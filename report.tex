@@ -5,7 +5,8 @@
 \usepackage{cite}
 \usepackage{booktabs}
 \usepackage{graphicx}
-
+\usepackage{epstopdf}
+\usepackage{float}
 \newenvironment{Example}[2][Example]{\begin{trivlist}
 		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 \usepackage{hyperref}
@@ -19,7 +20,7 @@
 
 \section{Introduction}
 
-\subsection{Linearizing a system of ODE's}
+\subsection{Linearizing a system}
 
 
 Let 
@@ -61,7 +62,19 @@ Where $J$ is the Jacobian matrix, $$J = \begin{bmatrix}
     \end{bmatrix}$$
 Now, Eq. \ref{eq:vec_mat} is an eigenvalue problem. The local stability and the behaviour of the system around the equilibrium points can be inferred from the eigenvalues of $J$. 
 
+\subsection{Characterizing a system}
+Near the equilibrium points, the non-linear system has similar behavior to the linear approximation, and thus, the stability of the system can be analyzed by analyzing the eigenvalues of the system. Let $\lambda_{1,2}$ be the eigenvalues of the system.
+\begin{enumerate}
+	\item If the eigenvalues of the system are real and positive at an equilibrium point, ($\lambda_{1,2} > 0$), the point is a \emph{nodal-source}. The solutions tend to diverge away from this point. The system is unstable around this point. 
+	\item If the eigenvalues of the system are real and negative at an equilibrium point, ($\lambda_{1,2} < 0$),the point is a \emph{nodal-sink}. The solutions tend to converge towards this point. The system is stable around this point. 
+	\item If the eigenvalues of the system are real, but $\lambda_1 < 0$ and $\lambda_2 > 0$, the point is a saddle point. The solutions tend to diverge away from this point. The system is unstable around this point.
+	\item If the eigenvalues of the system imaginary, $(\lambda_{1,2} = \pm k i)$, the point is a \emph{center}.  The solutions tend to oscillate around this point. The system is stable around this point.
+	\item If the eigenvalues of the system are complex, $(\lambda_{1,2} = a \pm b i)$, and $\Re{\lambda_{1,2}}> 0$, the point is a \emph{spiral-source}. The solutions tend to 
+\end{enumerate}
 
+\subsection{Quantitative Analysis of a System}
+
+\subsection{Examples and Solutions}
 \begin{Example}{1} \cite[p.~488]{diff_eq}
 	Consider the system for $(x,y \geq 0)$
 	\begin{align*}
@@ -92,9 +105,60 @@ Similarly, analyzing the system at $(10,0)$,
     \end{bmatrix}
 \end{align*}
 The eigenvalues of $J$ are $\lambda_{1,2} = \{-10, 10\}$. Since both the eigenvalues are real and nonzero, and $\lambda_1 < 0$, $\lambda_2 > 0$, the point $(10,0)$ is a saddle point. 
-
+Now analyzing the system at $(0,30)$,
+\begin{align*}
+J|_{(0,30)} &= \begin{bmatrix}
+-20 & 0 \\
+-60 & -30 
+\end{bmatrix}
+\end{align*}
+The eigenvalues for $J$ are $\lambda_{1,2} = \{-30, -20\}$. Since both eigenvalues are real and negative, $(0,30)$ is a nodal-sink. 
+Now to graphically analyze the system, the nullclines can be plotted in the phase plane.
+To find the horizontal nullclines,
+\begin{align*}
+\derivative{x}{t} &= 0\\
+\therefore x(10 - x -y) &= 0
+\end{align*}
+That is, $x = 0$ or $y = 10 - x$. 
+To find the vertical nullclines,
+\begin{align*}
+\derivative{y}{t} &= 0\\
+\therefore y(30 - 2x - y) &= 0
+\end{align*}
+That is, $y = 0$ or $y = 30 - 2x$. 
 \end{Example}
 
+\begin{Example}{2}
+	\cite[p.~488]{diff_eq}
+	Consider the system for $(x,y \geq 0)$
+	\begin{align*}
+	\derivative{x}{t} &= x(2 - x - y)\\
+	\derivative{y}{t} &= y(y - x^2)
+	\end{align*}
+	The Jacobian of the system is
+	\begin{align*}
+	J = \begin{bmatrix}
+	2 -2x  -y & -x \\
+	-2xy & 2y - x^2 
+	\end{bmatrix}
+	\end{align*}
+	Steady-states in the region $(x,y \geq 0)$ are $(0,0)$ , $(1,1)$ and $(2,0)$. Analyzing point $(0,0)$,
+	\begin{align*}
+	J = \begin{bmatrix}
+	2 & 0 \\
+	0 & 0
+	\end{bmatrix}
+	\end{align*}
+	The eigenvalues of $J$ are $\lambda_{1,2} = \{2, 0\}$
+	
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Figures/example_2}
+	\caption{Nullclines and vector fields}
+	\label{fig:example2}
+\end{figure}
+\end{Example}
 \section{Hamiltonian Systems}
 \section{Dissipative Systems}
 

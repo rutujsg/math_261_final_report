@@ -21,8 +21,7 @@
 \section{Introduction}
 
 \subsection{Linearizing a system}
-
-
+A system of linear differential equations is easy to analyze and has analytical solutions in most cases. To analyze as system of non-linear equations, the system must be linearized. 
 Let 
 \begin{align}
 \derivative{x}{t} &= F(x, y) \\
@@ -69,7 +68,8 @@ Near the equilibrium points, the non-linear system has similar behavior to the l
 	\item If the eigenvalues of the system are real and negative at an equilibrium point, ($\lambda_{1,2} < 0$),the point is a \emph{nodal-sink}. The solutions tend to converge towards this point. The system is stable around this point. 
 	\item If the eigenvalues of the system are real, but $\lambda_1 < 0$ and $\lambda_2 > 0$, the point is a saddle point. The solutions tend to diverge away from this point. The system is unstable around this point.
 	\item If the eigenvalues of the system imaginary, $(\lambda_{1,2} = \pm k i)$, the point is a \emph{center}.  The solutions tend to oscillate around this point. The system is stable around this point.
-	\item If the eigenvalues of the system are complex, $(\lambda_{1,2} = a \pm b i)$, and $\Re{\lambda_{1,2}}> 0$, the point is a \emph{spiral-source}. The solutions tend to 
+	\item If the eigenvalues of the system are complex, $(\lambda_{1,2} = a \pm b i)$, and $\Re{\lambda_{1,2}}> 0$, the point is a \emph{spiral-source}. The solutions tend to spiral-out from the equilibrium point. The system is unstable around this point.
+	\item If the eigenvalues of the system are complex, $(\lambda_{1,2} = a \pm b i)$, and $\Re{\lambda_{1,2}}< 0$, the point is a \emph{spiral-source}. The solutions tend to spiral-in to the equilibrium point. The system is stable around this point.
 \end{enumerate}
 
 \subsection{Quantitative Analysis of a System}
@@ -126,6 +126,14 @@ To find the vertical nullclines,
 \therefore y(30 - 2x - y) &= 0
 \end{align*}
 That is, $y = 0$ or $y = 30 - 2x$. 
+The nullclines intersect at $(0,0)$, $(10,0)$, $(15,0)$, $(0,30)$, which are the steady-state points of this system. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Figures/example_1}
+	\caption{Nullclines and vector fields}
+	\label{fig:example1}
+\end{figure}
+
 \end{Example}
 
 \begin{Example}{2}
@@ -159,7 +167,61 @@ That is, $y = 0$ or $y = 30 - 2x$.
 	\label{fig:example2}
 \end{figure}
 \end{Example}
+\begin{Example}{3}
+	\cite[p.~487]{diff_eq}
+	\begin{align*}
+	\derivative{x}{t} &= x(x - 1)\\
+	\derivative{y}{t} &= x^2 - y
+	\end{align*}
+	For 
+	\begin{enumerate}
+		\item $x_0 = -1$, $y_0 = 0$
+		\item $x_0 = 0.8$, $y_0 = 0$
+		\item $x_0 = 1$, $y_0 = 3$
+	\end{enumerate}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Figures/example_3_phase}
+	\caption{Solution Curves and Nullclines}
+	\label{fig:example3}
+\end{figure}
+Figure \ref{fig:example3} shows the solution curves in the $xy$-plane with $t$ as an implicit parameter. The direction of the arrows shows the tendancy of the solutions as $t\rightarrow\infty$. The above system has $x$-nullclines at $x = 0$ and $x = 1$ and $y$-nullclines at $y = x^2$. The interesection points of the nullclines are the steady-states of the system. 
+ 
+\end{Example}
 \section{Hamiltonian Systems}
+\subsection{Conserved Quantities}
+A real-valued function $H(x,y)$ is a \textit{conserved quantity} if
+\begin{align}
+\derivative{}{t}H(x(t), y(t) = 0
+\end{align}
+A system of differential equations is called a \textit{Hamiltonian system} if there exists a real-valued function $H(x,y)$ such that 
+\begin{align}
+\derivative{x}{t} &= \frac{\partial H}{\partial y} \label{ham_1} \\
+\derivative{y}{t} &= \frac{\partial H}{\partial x} \label{ham_2}
+\end{align}
+\subsection{Examples}
+\begin{Example}{1}
+	\begin{align*}
+	\derivative{x}{t} &= y \\
+	\derivative{y}{t} &= x^2 - a
+	\end{align*}
+	Where $a$ is a parameter. \\
+	{\bfseries Solution\\}
+	\begin{align*}
+	H(x,y) &= \frac{y^2}{2} - \frac{x^3}{3} + ax
+	\end{align*}
+	To verify that this system is a Hamiltonian system if $H$ is the Hamiltonian function,
+	\begin{align*}
+	\frac{\partial}{\partial y}H(x,y) &= y\\
+	&= \derivative{x}{t}
+	\end{align*}
+	And,
+	\begin{align*}
+	- \frac{\partial}{\partial x} H(x,y) &= x^2 - a\\
+	&= \derivative{y}{t}
+	\end{align*}
+	Since $H_x(x,y) = - y'(t)$ and $H_y(x,y) = x'(t)$, the system is Hamiltonian for $H(x,y)$ as the Hamiltonian function (From Eq. \ref{ham_1} and Eq. \ref{ham_2}).
+\end{Example}
 \section{Dissipative Systems}
 
 \bibliography{citations}

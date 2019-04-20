@@ -114,22 +114,23 @@ J|_{(0,30)} &= \begin{bmatrix}
 \end{align*}
 The eigenvalues for $J$ are $\lambda_{1,2} = \{-30, -20\}$. Since both eigenvalues are real and negative, $(0,30)$ is a nodal-sink. 
 Now to graphically analyze the system, the nullclines can be plotted in the phase plane.
-To find the horizontal nullclines,
+To find the $x$-nullclines,
 \begin{align*}
 \derivative{x}{t} &= 0\\
 \therefore x(10 - x -y) &= 0
 \end{align*}
 That is, $x = 0$ or $y = 10 - x$. 
-To find the vertical nullclines,
+To find the $y$-nullclines,
 \begin{align*}
 \derivative{y}{t} &= 0\\
 \therefore y(30 - 2x - y) &= 0
 \end{align*}
 That is, $y = 0$ or $y = 30 - 2x$. 
-The nullclines intersect at $(0,0)$, $(10,0)$, $(15,0)$, $(0,30)$, which are the steady-state points of this system. 
+The nullclines intersect at $(0,0)$, $(10,0)$, $(15,0)$, $(0,30)$, which are the steady-state points of this system. In Fig.\ref{fig:example1} the quantitative analysis of the system can be graphically verified by observing the direction of the vector fields around steady-states. 
+The 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Figures/example_1}
+	\includegraphics[width=\linewidth,height=.85\linewidth]{Figures/example_1}
 	\caption{Nullclines and vector fields}
 	\label{fig:example1}
 \end{figure}
@@ -150,19 +151,42 @@ The nullclines intersect at $(0,0)$, $(10,0)$, $(15,0)$, $(0,30)$, which are the
 	-2xy & 2y - x^2 
 	\end{bmatrix}
 	\end{align*}
-	Steady-states in the region $(x,y \geq 0)$ are $(0,0)$ , $(1,1)$ and $(2,0)$. Analyzing point $(0,0)$,
+	Steady-states in the region $(x,y \geq 0)$ are $(0,0)$ , $(1,1)$, and $(2,0)$. Analyzing point $(0,0)$,
 	\begin{align*}
 	J = \begin{bmatrix}
 	2 & 0 \\
 	0 & 0
 	\end{bmatrix}
 	\end{align*}
-	The eigenvalues of $J$ are $\lambda_{1,2} = \{2, 0\}$
-	
-	
+	The eigenvalues of $J$ are $\lambda_{1,2} = \{2, 0\}$. Since the eigenvalues are non-negative, the solution diverges from $(0,0)$ and the system is unstable around this point. 
+	At $(1,1)$
+	\begin{align*}
+	J &= \begin{bmatrix}
+	-1 & -1 \\
+	-2 & 1
+	\end{bmatrix}
+	\end{align*}
+	The eigenvalues of $J$ at this point are $\lambda_{1,2} = \pm \sqrt{3}$. Since both the eigenvalues have opposite signs, the point $(1,1)$ is a saddle point, and the system is unstable around this point. At point $(2,0)$,
+	\begin{align*}
+	\begin{bmatrix}
+	-2 & -2 \\
+	0 & - 4
+	\end{bmatrix}
+	\end{align*} 
+	The eigenvalues of $J$ at this point are $\lambda_{1,2} = \{-2,-4\}$. Since both the eigenvalues are negative, the point $(2,0)$ is a nodal-sink, and the system is stable around this point. The $x$-nullclines are given by 
+	\begin{align*}
+	\derivative{x}{t} &= 0 \\
+	\therefore x(2 - x - y) &= 0
+	\end{align*}
+	That is, $x = 0$ and $y = 2 - x$. The $y$-nullclines are given by 
+	\begin{align*}
+	\derivative{y}{t} &= 0\\
+	\therefore y(y - x^2 ) &= 0
+	\end{align*}
+	That is, $y = 0$ and $y = x^2$. The $x$ and $y$ nullclines intersect at $(0,0)$, $(1,1)$ and $(2,0)$, which are the steady-states of the system for $(x,y \ge 0)$. Fig.\ref{fig:example2} shows the vector field and $xy$ nullclines on the phase plane. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Figures/example_2}
+	\includegraphics[trim={2in 0 2in 0},width=\linewidth]{Figures/example_2}
 	\caption{Nullclines and vector fields}
 	\label{fig:example2}
 \end{figure}
@@ -181,7 +205,7 @@ The nullclines intersect at $(0,0)$, $(10,0)$, $(15,0)$, $(0,30)$, which are the
 	\end{enumerate}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Figures/example_3_phase}
+	\includegraphics[trim={2in 0 2in 0},width=1\linewidth]{Figures/example_3_phase}
 	\caption{Solution Curves and Nullclines}
 	\label{fig:example3}
 \end{figure}
@@ -198,6 +222,13 @@ A system of differential equations is called a \textit{Hamiltonian system} if th
 \begin{align}
 \derivative{x}{t} &= \frac{\partial H}{\partial y} \label{ham_1} \\
 \derivative{y}{t} &= \frac{\partial H}{\partial x} \label{ham_2}
+\end{align}
+The Jacobian of such a system is given by 
+\begin{align}
+J = \begin{bmatrix}
+\frac{\partial^2H}{\partial x \partial y} & \frac{\partial^2H}{\partial y^2} \\
+\frac{\partial^2H}{\partial x^2} & -\frac{\partial^2H}{\partial x \partial y}
+\end{bmatrix}
 \end{align}
 \subsection{Examples}
 \begin{Example}{1}
@@ -221,6 +252,15 @@ A system of differential equations is called a \textit{Hamiltonian system} if th
 	&= \derivative{y}{t}
 	\end{align*}
 	Since $H_x(x,y) = - y'(t)$ and $H_y(x,y) = x'(t)$, the system is Hamiltonian for $H(x,y)$ as the Hamiltonian function (From Eq. \ref{ham_1} and Eq. \ref{ham_2}).
+	
+	
+	The $x$-nullcline for the system is given by $\derivative{x}{t} = 0$, that is, $y = 0$ and the $y$-nullcline is given by $\derivative{y}{t}=0$, that is, $(x -a)(x+a) = 0$. The intersection of these nullclines is the equilbrium point of the system. So, the equilbrium points of the system are at $(\pm\sqrt{a}, 0)$ if $a > 0$ and no equilbrium points if $a < 0$ ($\because x \in \Im$).
+	
+	The Jacobian of the above system is given by 
+	\begin{align*}
+	J = \begin{bmatrix}
+	\end{bmatrix}
+	\end{align*} 
 \end{Example}
 \section{Dissipative Systems}
 

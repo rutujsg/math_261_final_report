@@ -66,7 +66,7 @@ Near the equilibrium points, the non-linear system has similar behavior to the l
 \begin{enumerate}
 	\item If the eigenvalues of the system are real and positive at an equilibrium point, ($\lambda_{1,2} > 0$), the point is a \emph{nodal-source}. The solutions tend to diverge away from this point. The system is unstable around this point. 
 	\item If the eigenvalues of the system are real and negative at an equilibrium point, ($\lambda_{1,2} < 0$),the point is a \emph{nodal-sink}. The solutions tend to converge towards this point. The system is stable around this point. 
-	\item If the eigenvalues of the system are real, but $\lambda_1 < 0$ and $\lambda_2 > 0$, the point is a saddle point. The solutions tend to diverge away from this point. The system is unstable around this point.
+	\item If the eigenvalues of the system are real, but $\lambda_1 < 0$ and $\lambda_2 > 0$, the point is a \emph{saddle point}. The solutions tend to diverge away from this point. The system is unstable around this point.
 	\item If the eigenvalues of the system imaginary, $(\lambda_{1,2} = \pm k i)$, the point is a \emph{center}.  The solutions tend to oscillate around this point. The system is stable around this point.
 	\item If the eigenvalues of the system are complex, $(\lambda_{1,2} = a \pm b i)$, and $\Re{\lambda_{1,2}}> 0$, the point is a \emph{spiral-source}. The solutions tend to spiral-out from the equilibrium point. The system is unstable around this point.
 	\item If the eigenvalues of the system are complex, $(\lambda_{1,2} = a \pm b i)$, and $\Re{\lambda_{1,2}}< 0$, the point is a \emph{spiral-source}. The solutions tend to spiral-in to the equilibrium point. The system is stable around this point.
@@ -259,6 +259,8 @@ J = \begin{bmatrix}
 	The Jacobian of the above system is given by 
 	\begin{align*}
 	J = \begin{bmatrix}
+	0 & 1 \\
+	2x & 0
 	\end{bmatrix}
 	\end{align*} 
 \end{Example}

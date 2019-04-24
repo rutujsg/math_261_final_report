@@ -7,9 +7,20 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{float}
+\usepackage[numbered,framed]{matlab-prettifier}
 \newenvironment{Example}[2][Example]{\begin{trivlist}
 		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 \usepackage{hyperref}
+
+
+\lstset{
+	caption			   = {MATLAB Source Code},
+	style              = Matlab-editor,
+	basicstyle         = \tiny\mlttfamily,
+	escapechar         = ",
+	mlshowsectionrules = true,
+	label			   = {lst:source_code}
+}
 
 \title{Analyzing Non-linear Ordinary Differential Equations\\ {\small MATH 26600}}
 \author{Rutuj Gavankar}
@@ -209,11 +220,11 @@ The
 	\caption{Solution Curves and Nullclines}
 	\label{fig:example3}
 \end{figure}
-Figure \ref{fig:example3} shows the solution curves in the $xy$-plane with $t$ as an implicit parameter. The direction of the arrows shows the tendancy of the solutions as $t\rightarrow\infty$. The above system has $x$-nullclines at $x = 0$ and $x = 1$ and $y$-nullclines at $y = x^2$. The interesection points of the nullclines are the steady-states of the system. 
+Figure \ref{fig:example3} shows the solution curves in the $xy$-plane with $t$ as an implicit parameter. The direction of the arrows shows the tendancy of the solutions as $t\rightarrow\infty$. The above system has $x$-nullclines at $x = 0$ and $x = 1$ and $y$-nullclines at $y = x^2$. The interesection points of the nullclines are the steady-states of the system. The MATLAB source code for the generated plots can be found in Listing \ref{lst:source_code}
  
 \end{Example}
 \section{Hamiltonian Systems}
-\subsection{Conserved Quantities}
+\subsection{Conserved Quantities and Hamiltonians}
 A real-valued function $H(x,y)$ is a \textit{conserved quantity} if
 \begin{align}
 \derivative{}{t}H(x(t), y(t) = 0
@@ -221,15 +232,57 @@ A real-valued function $H(x,y)$ is a \textit{conserved quantity} if
 A system of differential equations is called a \textit{Hamiltonian system} if there exists a real-valued function $H(x,y)$ such that 
 \begin{align}
 \derivative{x}{t} &= \frac{\partial H}{\partial y} \label{ham_1} \\
-\derivative{y}{t} &= \frac{\partial H}{\partial x} \label{ham_2}
+\derivative{y}{t} &= - \frac{\partial H}{\partial x} \label{ham_2}
 \end{align}
+\subsection{Characterizing a Hamiltonian system}
 The Jacobian of such a system is given by 
 \begin{align}
-J = \begin{bmatrix}
+J &= \begin{bmatrix}
 \frac{\partial^2H}{\partial x \partial y} & \frac{\partial^2H}{\partial y^2} \\
 \frac{\partial^2H}{\partial x^2} & -\frac{\partial^2H}{\partial x \partial y}
+\end{bmatrix} \\
+&= \begin{bmatrix}
+\alpha & \beta \\
+\gamma & -\alpha
 \end{bmatrix}
 \end{align}
+The eigenvalues of the matrix $J$ are $\lambda_{1,2} = \pm \sqrt{\alpha^2 + \beta\lambda}$. Now,
+\begin{enumerate}
+	\item If $\alpha^2 + \beta\lambda > 0$, both eigenvalues will be real and have opposite signs, and equilibrium point will be a saddle. 
+	\item If $\alpha^2 + \beta\lambda < 0$, both eigenvalues are imaginary and complex-conjugates. The equilibrium  point will be a center. 
+	\item If $\alpha^2 + \beta\lambda = 0$, the only eigenvalue is $\lambda = 0$. This test is inconclusive and requires further analysis, but since the system is Hamiltonian, the equilibrium point cannot be a source or a sink \cite{diff_eq}.  
+\end{enumerate}
+\subsection{Constructing the Hamiltonian function}
+If a system 
+\begin{align}
+x'(t) &= f(x,y) \\
+y'(t) &= g(x,y)
+\end{align}
+is Hamiltonian, with an unknown Hamiltonian function $H(x,y)$ then, \cite{diff_eq}
+\begin{align}
+\frac{\partial f}{\partial x} &= -\frac{\partial g}{\partial y}  \\
+f(x,y) &= \frac{\partial H}{\partial y} \\
+g(x,y) &=  - \frac{\partial H}{\partial x}
+\end{align}
+That is,
+\begin{align}
+H(x,y) &= \int f(x,y) \dd{y} + \phi(x)
+\end{align}
+where $\phi(x)$ is a scalar function that is independent of $y$. That is,
+\begin{align}
+\phi'(x) = - g ( x , y ) - \frac { \partial } { \partial x } \int f ( x , y ) \dd{y}
+\end{align}
+Thus the Hamiltonian function can be constructed by 
+\begin{align}
+H(x,y) &= \int f(x,y) \dd{y} + \int \phi'(x) \dd{x}
+\end{align}
+\subsection{Applications of Hamiltonian Systems - Non-linear Pendulum}
+For an ideal-pendulum with mass $m$, length $l = 1$ and no friction, the system describing the motion in polar coordinates is 
+\begin{align*}
+\derivative{\theta}{t} &= \omega \\
+\derivative{\omega}{t} &= -g \sin\theta
+\end{align*}  
+where $\theta$ is the angular displacement and $\omega$ is the angular velocity of the pendulum. 
 \subsection{Examples}
 \begin{Example}{1}
 	\begin{align*}
@@ -246,7 +299,7 @@ J = \begin{bmatrix}
 	\frac{\partial}{\partial y}H(x,y) &= y\\
 	&= \derivative{x}{t}
 	\end{align*}
-	And,
+	and,
 	\begin{align*}
 	- \frac{\partial}{\partial x} H(x,y) &= x^2 - a\\
 	&= \derivative{y}{t}
@@ -263,9 +316,32 @@ J = \begin{bmatrix}
 	2x & 0
 	\end{bmatrix}
 	\end{align*} 
+	At the equilibrium point $(\sqrt{a}, 0)$, the Jacobian is 
+	\begin{align*}
+	J &= \begin{bmatrix}
+	0 & 1 \\
+	2\sqrt{a} & 0
+	\end{bmatrix}
+	\end{align*}
+	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm \sqrt{2 \sqrt{a}}$. Since both the eigenvalues have opposite signs, the point $(\sqrt{a}, 0)$ is a saddle point and the system is asymptomatically unstable around this point. At the point $(-\sqrt{a}, 0)$, the Jacobian is 
+	\begin{align*}
+	J = \begin{bmatrix}
+	0 & 1 \\
+	-2\sqrt{a} & 0
+	\end{bmatrix}
+	\end{align*} 
+	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm i \sqrt{2 \sqrt{a}}$
+	
+\begin{figure}
+	\centering
+	\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/hamiltonian}
+	\caption{Phase portrait of $H(x,y)$}
+	\label{fig:hamiltonian}
+\end{figure}
 \end{Example}
 \section{Dissipative Systems}
-
+\section{Appendix}
+\lstinputlisting{numerical_soln.m}
 \bibliography{citations}
 \bibliographystyle{plain}
 

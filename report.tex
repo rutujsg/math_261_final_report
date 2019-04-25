@@ -252,7 +252,7 @@ The eigenvalues of the matrix $J$ are $\lambda_{1,2} = \pm \sqrt{\alpha^2 + \bet
 	\item If $\alpha^2 + \beta\lambda < 0$, both eigenvalues are imaginary and complex-conjugates. The equilibrium  point will be a center. 
 	\item If $\alpha^2 + \beta\lambda = 0$, the only eigenvalue is $\lambda = 0$. This test is inconclusive and requires further analysis, but since the system is Hamiltonian, the equilibrium point cannot be a source or a sink \cite{diff_eq}.  
 \end{enumerate}
-\subsection{Constructing the Hamiltonian function}
+\subsection{Constructing the Hamiltonian function \label{sec:constructing_hamiltonian}}
 If a system 
 \begin{align}
 x'(t) &= f(x,y) \\
@@ -277,12 +277,35 @@ Thus the Hamiltonian function can be constructed by
 H(x,y) &= \int f(x,y) \dd{y} + \int \phi'(x) \dd{x}
 \end{align}
 \subsection{Applications of Hamiltonian Systems - Non-linear Pendulum}
-For an ideal-pendulum with mass $m$, length $l = 1$ and no friction, the system describing the motion in polar coordinates is 
-\begin{align*}
+For an ideal-pendulum with mass $m = 1$, length $l = 1$ and no friction, the system describing the motion in polar coordinates is 
+\begin{align}
 \derivative{\theta}{t} &= \omega \\
 \derivative{\omega}{t} &= -g \sin\theta
-\end{align*}  
+\end{align}  
 where $\theta$ is the angular displacement and $\omega$ is the angular velocity of the pendulum. 
+
+The system has periodic steady-states at $(\theta, \omega ) = (n\pi , 0)$ where $n = 0,1,2,\ldots$. Physically, since there is no friction in the system, the total energy has to be conserved at every point in the system, implying that the total energy of the system is the Hamiltonian function for the system. The total energy for the system at any point in space and time is the total kinetic energy $T$ and the total potential energy $U$. The Hamiltonian can be constructed by $H(\theta, \omega, t) = T(\omega, t) + U(\theta, t)$ \cite{engr_math}. That is,
+\begin{align}
+H(\theta,\omega, t) &= \frac{m l^2 \omega^2}{2} + mgl(1 - \cos\theta) \\
+&= \frac{\omega^2}{2} - g\cos\theta
+\end{align}
+since $m,l = 1$ and $g$ is a constant. Alternatively, the Hamiltonian can be formulated by the method in Section \ref{sec:constructing_hamiltonian}. 
+
+As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution_curves}, the solution curves depend on the initial conditions. If the initial angle $\theta$ is an integer multiple of $\pi$, and the initial velocity is $0$, the 
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/pendulum_phase}
+	\caption{Phase portrait of a non-linear pendulum}
+	\label{fig:pendulum_phase}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/phase_online_pendulum}
+	\caption{Solution Curves for an ideal-pendulum with different initial conditions}
+	\label{fig:pendulum_solution_curves}
+\end{figure}
+
 \subsection{Examples}
 \begin{Example}{1}
 	\begin{align*}
@@ -332,12 +355,15 @@ where $\theta$ is the angular displacement and $\omega$ is the angular velocity 
 	\end{align*} 
 	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm i \sqrt{2 \sqrt{a}}$
 	
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/hamiltonian}
 	\caption{Phase portrait of $H(x,y)$}
 	\label{fig:hamiltonian}
 \end{figure}
+
+
+
 \end{Example}
 \section{Dissipative Systems}
 \section{Appendix}

@@ -1,5 +1,5 @@
 \documentclass[12pt,1in]{article}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb,amsfonts}
 \usepackage{physics}
 \usepackage[margin=1in]{geometry}
 \usepackage{cite}
@@ -8,6 +8,8 @@
 \usepackage{epstopdf}
 \usepackage{float}
 \usepackage[numbered,framed]{matlab-prettifier}
+\newtheorem{definition}{Definition}
+
 \newenvironment{Example}[2][Example]{\begin{trivlist}
 		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 \usepackage{hyperref}
@@ -25,6 +27,7 @@
 \title{Analyzing Non-linear Ordinary Differential Equations\\ {\small MATH 26600}}
 \author{Rutuj Gavankar}
 \date{}
+
 \begin{document}
 
 \maketitle
@@ -225,15 +228,21 @@ Figure \ref{fig:example3} shows the solution curves in the $xy$-plane with $t$ a
 \end{Example}
 \section{Hamiltonian Systems}
 \subsection{Conserved Quantities and Hamiltonians}
-A real-valued function $H(x,y)$ is a \textit{conserved quantity} if
+\begin{definition}[\cite{diff_eq}]
+A real-valued function $H(x,y)$ of the two variables $x$ and $y$ is a conserved quantity for a system of differential equations if it is constant along all solution curves of the system. 
 \begin{align}
 \derivative{}{t}H(x(t), y(t) = 0
 \end{align}
+\end{definition}
+\newpage
+\begin{definition}
 A system of differential equations is called a \textit{Hamiltonian system} if there exists a real-valued function $H(x,y)$ such that 
 \begin{align}
 \derivative{x}{t} &= \frac{\partial H}{\partial y} \label{ham_1} \\
 \derivative{y}{t} &= - \frac{\partial H}{\partial x} \label{ham_2}
 \end{align}
+\end{definition}
+All Hamiltonian functions are conserved quantities.
 \subsection{Characterizing a Hamiltonian system}
 The Jacobian of such a system is given by 
 \begin{align}
@@ -284,14 +293,20 @@ For an ideal-pendulum with mass $m = 1$, length $l = 1$ and no friction, the sys
 \end{align}  
 where $\theta$ is the angular displacement and $\omega$ is the angular velocity of the pendulum. 
 
-The system has periodic steady-states at $(\theta, \omega ) = (n\pi , 0)$ where $n = 0,1,2,\ldots$. Physically, since there is no friction in the system, the total energy has to be conserved at every point in the system, implying that the total energy of the system is the Hamiltonian function for the system. The total energy for the system at any point in space and time is the total kinetic energy $T$ and the total potential energy $U$. The Hamiltonian can be constructed by $H(\theta, \omega, t) = T(\omega, t) + U(\theta, t)$ \cite{engr_math}. That is,
+The system has periodic steady-states at $(\theta, \omega ) = (\pm n\pi , 0)$ where $n = 0,1,2,\ldots$. Physically, since there is no friction in the system, the total energy has to be conserved at every point in the system, implying that the total energy of the system is the Hamiltonian function for the system. The total energy for the system at any point in space and time is the total kinetic energy $T$ and the total potential energy $U$. The Hamiltonian can be constructed by $H(\theta, \omega, t) = T(\omega, t) + U(\theta, t)$ \cite{engr_math}. That is,
 \begin{align}
 H(\theta,\omega, t) &= \frac{m l^2 \omega^2}{2} + mgl(1 - \cos\theta) \\
-&= \frac{\omega^2}{2} - g\cos\theta
+&= \frac{\omega^2}{2} - g\cos\theta \label{eq:hamiltonian_pendulum}
 \end{align}
 since $m,l = 1$ and $g$ is a constant. Alternatively, the Hamiltonian can be formulated by the method in Section \ref{sec:constructing_hamiltonian}. 
 
-As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution_curves}, the solution curves depend on the initial conditions. If the initial angle $\theta$ is an integer multiple of $\pi$, and the initial velocity is $0$, the 
+As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution_curves}, the solution curves depend on the initial conditions. 
+\begin{enumerate}
+	\item If the initial angle $\theta$ is $n\pi$ and the initial velocity $\omega$ is $0$, that is, parallel to the vertical axis and at rest, the pendulum is in equilibrium and does not more. 
+	\item If the initial angle $\theta < 2n\pi$ and initial velocity $\omega = 0$, the pendulum never crosses $(2n + 1)\pi$, and thus always oscillates back and forth. This case is similar to the linear pendulum approximation (Fig. \ref{fig:pendulum_phase}, curve A). 
+	\item If the pendulum starts off with an initial velocity that is greater than a critical velocity $\omega_0$, the pendulum rotates forever with a non-zero velocity at all times (Fig. \ref{fig:pendulum_phase}, curve B).
+\end{enumerate}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/pendulum_phase}
@@ -312,7 +327,7 @@ As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution
 	\derivative{x}{t} &= y \\
 	\derivative{y}{t} &= x^2 - a
 	\end{align*}
-	Where $a$ is a parameter. \\
+	where $a$ is a parameter. \\
 	{\bfseries Solution\\}
 	\begin{align*}
 	H(x,y) &= \frac{y^2}{2} - \frac{x^3}{3} + ax
@@ -353,7 +368,7 @@ As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution
 	-2\sqrt{a} & 0
 	\end{bmatrix}
 	\end{align*} 
-	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm i \sqrt{2 \sqrt{a}}$
+	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm i \sqrt{2 \sqrt{a}}$. The phase portrait and and vector field for various values of $a$ is plotted in Figure \ref{fig:hamiltonian}
 	
 \begin{figure}[H]
 	\centering
@@ -361,14 +376,48 @@ As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution
 	\caption{Phase portrait of $H(x,y)$}
 	\label{fig:hamiltonian}
 \end{figure}
-
-
-
 \end{Example}
+
 \section{Dissipative Systems}
+\subsection{Lyapunov functions}
+\begin{definition}[\cite{diff_eq}]	
+A function $L(x(t), y(t)$ is called a \emph{Lyapunov function} for a system of differential equations if, for every solution $(x(t), y(t))$ that is not an equilibrium solution of the system,
+\begin{align}
+\derivative{}{t} L(x(t), y(t))  \leq 0
+\end{align}
+for all $t$ with strict inequality except for a discrete set of $t$'s. 
+\end{definition}
+A Lyapunov function is never increasing along nonequilibrium solutions.
+
+\subsection{Damped Pendulum}
+For a pendulum with mass $m = 1$ and length $l = 1$ with a dampening coefficient of $b$, the system describing the motion in polar coordinates is
+\begin{align}
+\derivative{\theta}{t} &= \omega \\
+\derivative{\omega}{t} &= - b \omega - g \sin\theta
+\end{align}
+where $\theta$ is the angular displacement and $\omega$ is the angular velocity of the pendulum.
+
+The system has steady-states at $(\theta, \omega) = (\pm 2n\pi,0)$ where $n = 0, 1, 2, \ldots$ which correspond to the pendulum being parallel to the vertical and at $((\theta, \omega) = (\pm (2n + 1)\pi,0))$ which corresponds to the pendulum being perpendicular to the vertical. 
+
+Since there is friction involved in the system, the system won't be Hamiltonian and the total energy of the system will be dissipated as time evolves. This can be proven by using the Hamiltonian function for an ideal pendulum from Eq. \ref{eq:hamiltonian_pendulum}. 
+\begin{align}
+\derivative{}{t}H(\theta(t), \omega(t) &= \frac{\partial H}{\partial \theta} \derivative{\theta}{t} + \frac{\partial H}{\partial \omega} \derivative{\omega}{t} \\
+&= (g \sin\theta ) \omega + \omega (- b \omega - g \sin\theta) \nonumber \\
+&= - b \omega^2 \\ 
+&\leq 0 \nonumber
+\end{align}
+Since $\derivative{H}{t}$ is always strictly non-positive, but not zero for all solution curves, $H$ is not a Hamiltonian function, but a Lyapunov function. Physically, it means that the pendulum loses energy over time.  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/pendulum_phase_damped}
+	\caption{Phase portrait of a damped pendulum}
+	\label{fig:damped_pendulum}
+\end{figure}
+
 \section{Appendix}
 \lstinputlisting{numerical_soln.m}
 \bibliography{citations}
-\bibliographystyle{plain}
+\bibliographystyle{}
 
 \end{document}

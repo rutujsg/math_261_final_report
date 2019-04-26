@@ -1,9 +1,0 @@
-[x_0, y_0] = meshgrid(-2:.1:2, -2:.1:2);
-
-a = -1;
-dxdt = y_0; 
-dydt = x_0.^2 - a;
-
-quiver(x_0,y_0,dxdt,dydt)
-hold on;
-contour(dxdt, dydt)

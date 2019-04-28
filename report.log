@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.3)  25 APR 2019 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.3)  28 APR 2019 14:02
 entering extended mode
 **./report.tex
 (report.tex
@@ -396,6 +396,66 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box47
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
+Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen167
+\extrarowheight=\dimen168
+\NC@list=\toks23
+\extratabsurround=\skip52
+\backup@length=\skip53
+)
+("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3key
+s2e\l3keys2e.sty"
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box48
+\l__siunitx_tmp_dim=\dimen169
+\l__siunitx_tmp_int=\count197
+\l__siunitx_number_mantissa_length_int=\count198
+\l__siunitx_number_uncert_length_int=\count199
+\l__siunitx_round_int=\count266
+\l__siunitx_process_decimal_int=\count267
+\l__siunitx_process_uncertainty_int=\count268
+\l__siunitx_process_fixed_int=\count269
+\l__siunitx_process_integer_min_int=\count270
+\l__siunitx_process_precision_int=\count271
+\l__siunitx_group_min_int=\count272
+\l__siunitx_angle_marker_box=\box49
+\l__siunitx_angle_unit_box=\box50
+\l__siunitx_angle_marker_dim=\dimen170
+\l__siunitx_angle_unit_dim=\dimen171
+\l__siunitx_unit_int=\count273
+\l__siunitx_unit_denominator_int=\count274
+\l__siunitx_unit_numerator_int=\count275
+\l__siunitx_unit_prefix_int=\count276
+\l__siunitx_unit_prefix_base_int=\count277
+\l__siunitx_unit_prefix_gram_int=\count278
+\l__siunitx_number_product_int=\count279
+\c__siunitx_one_fill_skip=\skip54
+\l__siunitx_table_unit_align_skip=\skip55
+\l__siunitx_table_exponent_dim=\dimen172
+\l__siunitx_table_integer_dim=\dimen173
+\l__siunitx_table_mantissa_dim=\dimen174
+\l__siunitx_table_marker_dim=\dimen175
+\l__siunitx_table_result_dim=\dimen176
+\l__siunitx_table_uncert_dim=\dimen177
+\l__siunitx_table_fill_pre_dim=\dimen178
+\l__siunitx_table_fill_post_dim=\dimen179
+\l__siunitx_table_fill_mid_dim=\dimen180
+\l__siunitx_table_pre_box=\box51
+\l__siunitx_table_post_box=\box52
+\l__siunitx_table_mantissa_box=\box53
+\l__siunitx_table_result_box=\box54
+\l__siunitx_table_number_align_skip=\skip56
+\l__siunitx_table_text_align_skip=\skip57
+
+("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\latex\translator\trans
+lator.sty"
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+))
 ("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\latex\matlab-prettifie
 r\matlab-prettifier.sty"
 Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
@@ -501,38 +561,38 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count197
-\lst@gtempboxa=\box48
-\lst@token=\toks23
-\lst@length=\count198
-\lst@currlwidth=\dimen167
-\lst@column=\count199
-\lst@pos=\count266
-\lst@lostspace=\dimen168
-\lst@width=\dimen169
-\lst@newlines=\count267
-\lst@lineno=\count268
-\lst@maxwidth=\dimen170
+\lst@mode=\count280
+\lst@gtempboxa=\box55
+\lst@token=\toks24
+\lst@length=\count281
+\lst@currlwidth=\dimen181
+\lst@column=\count282
+\lst@pos=\count283
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
+\lst@newlines=\count284
+\lst@lineno=\count285
+\lst@maxwidth=\dimen184
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count269
-\lst@skipnumbers=\count270
-\lst@framebox=\box49
+\c@lstnumber=\count286
+\lst@skipnumbers=\count287
+\lst@framebox=\box56
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-\netBracketCount@mlpr=\count271
-\blkLvl@mlpr=\count272
-\blkLvlAtClassdef@mlpr=\count273
-\emHeight@mlpr=\skip52
-\jayDepth@mlpr=\skip53
-\sectionRuleOffset@mlpr=\skip54
-\toks@mlpr=\toks24
+\netBracketCount@mlpr=\count288
+\blkLvl@mlpr=\count289
+\blkLvlAtClassdef@mlpr=\count290
+\emHeight@mlpr=\skip58
+\jayDepth@mlpr=\skip59
+\sectionRuleOffset@mlpr=\skip60
+\toks@mlpr=\toks25
 )
-\c@definition=\count274
+\c@definition=\count291
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
@@ -573,14 +633,14 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen171
-\Hy@linkcounter=\count275
-\Hy@pagecounter=\count276
+\@linkdim=\dimen185
+\Hy@linkcounter=\count292
+\Hy@pagecounter=\count293
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count277
+\Hy@SavedSpaceFactor=\count294
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -592,17 +652,17 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count278
+\c@Hy@tempcnt=\count295
 
 ("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen172
-\Fld@menulength=\count279
-\Field@Width=\dimen173
-\Fld@charsize=\dimen174
+\XeTeXLinkMargin=\dimen186
+\Fld@menulength=\count296
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -612,24 +672,24 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count280
-\c@Item=\count281
-\c@Hfootnote=\count282
+\Hy@abspage=\count297
+\c@Item=\count298
+\c@Hfootnote=\count299
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count283
-\c@bookmark@seq@number=\count284
+\Fld@listcount=\count300
+\c@bookmark@seq@number=\count301
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip55
+\Hy@SectionHShift=\skip61
 )
 
 LaTeX Warning: Unused global option(s):
@@ -638,26 +698,26 @@ LaTeX Warning: Unused global option(s):
 (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 32.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -697,50 +757,58 @@ LaTeX Font Info:    ... okay on input line 31.
 ("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\context\base\mkii\supp
 -pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
-\scratchdimen=\dimen175
-\scratchbox=\box50
-\nofMPsegments=\count286
-\nofMParguments=\count287
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count288
-\MPscratchDim=\dimen176
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count302
+\scratchdimen=\dimen189
+\scratchbox=\box57
+\nofMPsegments=\count303
+\nofMParguments=\count304
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen190
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
+\everyMPtoPDFconversion=\toks27
 )
-\c@lstlisting=\count291
-\AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 31.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\Rutuj Gavankar\AppData\Roaming\MiKTeX\2.9\tex\latex\translator\trans
+lator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+\c@lstlisting=\count308
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring OFF on input line 32.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count292
+\c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (report.out) (report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Rutuj Gavankar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
-]
+] [3]
 Package epstopdf Info: Source file: <Figures/example_1.eps>
 (epstopdf)                    date: 2019-04-20 18:21:34
 (epstopdf)                    size: 123473 bytes
@@ -749,17 +817,17 @@ Package epstopdf Info: Source file: <Figures/example_1.eps>
 (epstopdf)                    size: 18188 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_1-eps-conve
 rted-to.pdf Figures/example_1.eps>
-(epstopdf)             \includegraphics on input line 147.
+(epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_1-eps-converted-to.pdf, id=101, pagebox=cropbox, 721.69624pt x
+<Figures/example_1-eps-converted-to.pdf, id=119, pagebox=cropbox, 721.69624pt x
  748.7975pt>
 File: Figures/example_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/example_1-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_1-eps-converted-to.pdf  used on input 
-line 147. on input line 147.
+line 183. on input line 183.
 Package pdftex.def Info: Requested size: 469.75774pt x 399.29446pt on input lin
-e 147.
- [3] [4 <./Figures/example_1-eps-converted-to.pdf>]
+e 183.
+ [4] [5 <./Figures/example_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/example_2.eps>
 (epstopdf)                    date: 2019-04-20 18:21:18
 (epstopdf)                    size: 129758 bytes
@@ -768,17 +836,17 @@ Package epstopdf Info: Source file: <Figures/example_2.eps>
 (epstopdf)                    size: 19174 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_2-eps-conve
 rted-to.pdf Figures/example_2.eps>
-(epstopdf)             \includegraphics on input line 203.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_2-eps-converted-to.pdf, id=117, pagebox=cropbox, 1445.4pt x 75
+<Figures/example_2-eps-converted-to.pdf, id=135, pagebox=cropbox, 1445.4pt x 75
 4.82pt>
 File: Figures/example_2-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/example_2-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_2-eps-converted-to.pdf  used on input 
-line 203. on input line 203.
+line 239. on input line 239.
 Package pdftex.def Info: Requested size: 469.75502pt x 306.64488pt on input lin
-e 203.
- [5]
+e 239.
+ [6]
 Package epstopdf Info: Source file: <Figures/example_3_phase.eps>
 (epstopdf)                    date: 2019-04-13 14:44:08
 (epstopdf)                    size: 169611 bytes
@@ -788,18 +856,22 @@ df>
 (epstopdf)                    size: 15840 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_3_phase-eps
 -converted-to.pdf Figures/example_3_phase.eps>
-(epstopdf)             \includegraphics on input line 222.
+(epstopdf)             \includegraphics on input line 258.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_3_phase-eps-converted-to.pdf, id=124, pagebox=cropbox, 1445.4p
+<Figures/example_3_phase-eps-converted-to.pdf, id=142, pagebox=cropbox, 1445.4p
 t x 756.8275pt>
 File: Figures/example_3_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/example_3_phase-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_3_phase-eps-converted-to.pdf  used on 
-input line 222. on input line 222.
+input line 258. on input line 258.
 Package pdftex.def Info: Requested size: 469.75502pt x 307.46042pt on input lin
-e 222.
- [6 <./Figures/example_2-eps-converted-to.pdf>] [7 <./Figures/example_3_phase-e
-ps-converted-to.pdf>] [8]
+e 258.
+ [7 <./Figures/example_2-eps-converted-to.pdf>] [8 <./Figures/example_3_phase-e
+ps-converted-to.pdf>] [9]
+
+LaTeX Warning: Reference `fig:pendulum_solution_curves' on page 10 undefined on
+ input line 339.
+
 Package epstopdf Info: Source file: <Figures/pendulum_phase.eps>
 (epstopdf)                    date: 2019-04-25 22:54:24
 (epstopdf)                    size: 1347647 bytes
@@ -809,30 +881,22 @@ f>
 (epstopdf)                    size: 178247 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/pendulum_phase-eps-
 converted-to.pdf Figures/pendulum_phase.eps>
-(epstopdf)             \includegraphics on input line 312.
+(epstopdf)             \includegraphics on input line 348.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pendulum_phase-eps-converted-to.pdf, id=179, pagebox=cropbox, 1445.4pt
+<Figures/pendulum_phase-eps-converted-to.pdf, id=195, pagebox=cropbox, 1445.4pt
  x 754.82pt>
 File: Figures/pendulum_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/pendulum_phase-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pendulum_phase-eps-converted-to.pdf  used on i
-nput line 312. on input line 312.
+nput line 348. on input line 348.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 312.
- [9]
-<Figures/phase_online_pendulum.png, id=196, 602.25pt x 451.6875pt>
-File: Figures/phase_online_pendulum.png Graphic file (type png)
-<use Figures/phase_online_pendulum.png>
-Package pdftex.def Info: Figures/phase_online_pendulum.png  used on input line 
-319. on input line 319.
-Package pdftex.def Info: Requested size: 328.82707pt x 246.63002pt on input lin
-e 319.
- [10 <./Figures/pendulum_phase-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
+e 348.
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 359--362
 
  []
 
-[11 <./Figures/phase_online_pendulum.png>]
+[11 <./Figures/pendulum_phase-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/hamiltonian.eps>
 (epstopdf)                    date: 2019-04-22 20:53:19
 (epstopdf)                    size: 2311155 bytes
@@ -841,95 +905,126 @@ Package epstopdf Info: Source file: <Figures/hamiltonian.eps>
 (epstopdf)                    size: 287054 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/hamiltonian-eps-con
 verted-to.pdf Figures/hamiltonian.eps>
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             \includegraphics on input line 405.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/hamiltonian-eps-converted-to.pdf, id=215, pagebox=cropbox, 1445.4pt x 
+<Figures/hamiltonian-eps-converted-to.pdf, id=223, pagebox=cropbox, 1445.4pt x 
 754.82pt>
 File: Figures/hamiltonian-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/hamiltonian-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/hamiltonian-eps-converted-to.pdf  used on inpu
-t line 375. on input line 375.
+t line 405. on input line 405.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 375.
- [12 <./Figures/hamiltonian-eps-converted-to.pdf>]
+e 405.
+ [12]
+Overfull \hbox (3.71764pt too wide) in paragraph at lines 414--415
+[]\OT1/cmr/m/it/12 A func-tion $\OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 x\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; y\
+OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \OT1/cmr/m/it/12 is called
+ a \OT1/cmr/m/n/12 Lya-punov func-
+ []
+
+[13 <./Figures/hamiltonian-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/pendulum_phase_damped.eps>
-(epstopdf)                    date: 2019-04-25 23:30:32
-(epstopdf)                    size: 3120667 bytes
+(epstopdf)                    date: 2019-04-27 20:31:05
+(epstopdf)                    size: 3006903 bytes
 (epstopdf)             Output file: <Figures/pendulum_phase_damped-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2019-04-25 23:31:45
-(epstopdf)                    size: 358766 bytes
+(epstopdf)                    date: 2019-04-27 20:31:19
+(epstopdf)                    size: 346842 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/pendulum_phase_damp
 ed-eps-converted-to.pdf Figures/pendulum_phase_damped.eps>
-(epstopdf)             \includegraphics on input line 413.
+(epstopdf)             \includegraphics on input line 444.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pendulum_phase_damped-eps-converted-to.pdf, id=227, pagebox=cropbox, 1
+<Figures/pendulum_phase_damped-eps-converted-to.pdf, id=245, pagebox=cropbox, 1
 445.4pt x 754.82pt>
 File: Figures/pendulum_phase_damped-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figures/pendulum_phase_damped-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pendulum_phase_damped-eps-converted-to.pdf  us
-ed on input line 413. on input line 413.
+ed on input line 444. on input line 444.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 413.
- [13]
-LaTeX Font Info:    Try loading font information for OT1+fvm on input line 419.
+e 444.
+ [14 <./Figures/pendulum_phase_damped-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figures/example_damped_pendulum.eps>
+(epstopdf)                    date: 2019-04-28 00:05:55
+(epstopdf)                    size: 2804688 bytes
+(epstopdf)             Output file: <Figures/example_damped_pendulum-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2019-04-28 00:07:45
+(epstopdf)                    size: 325674 bytes
+(epstopdf)             Command: <epstopdf --outfile=Figures/example_damped_pend
+ulum-eps-converted-to.pdf Figures/example_damped_pendulum.eps>
+(epstopdf)             \includegraphics on input line 467.
+Package epstopdf Info: Output file is already uptodate.
+<Figures/example_damped_pendulum-eps-converted-to.pdf, id=259, pagebox=cropbox,
+ 1445.4pt x 754.82pt>
+File: Figures/example_damped_pendulum-eps-converted-to.pdf Graphic file (type p
+df)
+<use Figures/example_damped_pendulum-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/example_damped_pendulum-eps-converted-to.pdf  
+used on input line 467. on input line 467.
+Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
+e 467.
+LaTeX Font Info:    Try loading font information for OT1+fvm on input line 473.
 
-LaTeX Font Info:    No file OT1fvm.fd. on input line 419.
+LaTeX Font Info:    No file OT1fvm.fd. on input line 473.
 
 
 LaTeX Font Warning: Font shape `OT1/fvm/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 419.
+(Font)              using `OT1/cmr/m/n' instead on input line 473.
 
-(numerical_soln.m
+(numerical_soln.m [15 <./Figures/example_damped_pendulum-eps-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+fvm on input line 3.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\bera\ts1fvm.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\bera\ts1fvm.fd"
 File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
 )
 LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
 (Font)              scaled to size 5.10004pt on input line 3.
-)
-(report.bbl [14 <./Figures/pendulum_phase_damped-eps-converted-to.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+) (report.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
 
-[15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
- (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
+(report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 944226A95B5B14139176ADB310EBAB54;1064.
+(rerunfilecheck)             Checksum: 67C4A6E4BBA8F4F77079B8B8F427B6E1;1123.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
  ) 
 Here is how much of TeX's memory you used:
- 19129 strings out of 493312
- 325052 string characters out of 3138871
- 522810 words of memory out of 3000000
- 22378 multiletter control sequences out of 15000+200000
- 542985 words of font info for 65 fonts, out of 3000000 for 9000
+ 21465 strings out of 493312
+ 390839 string characters out of 3138871
+ 574493 words of memory out of 3000000
+ 24680 multiletter control sequences out of 15000+200000
+ 546282 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,15n,65p,596b,1232s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,16n,65p,792b,2124s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on report.pdf (15 pages, 1185485 bytes).
+lic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on report.pdf (16 pages, 1421321 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 

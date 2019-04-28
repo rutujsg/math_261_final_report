@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{float}
+\usepackage{siunitx}
 \usepackage[numbered,framed]{matlab-prettifier}
 \newtheorem{definition}{Definition}
 
@@ -33,7 +34,31 @@
 \maketitle
 
 \section{Introduction}
-
+A Differential Equation is an equation describing the relationship of a function and its derivatives. Differential equations can be used to model physical phenomena and predict how a system changes. Ordinary differential equations (ODE's) are differential equations involving only one independent variable. A linear differential equation is one where every term of the dependent  variable is linear. The most general form of an $n$'th order linear differential equation is 
+\begin{align}
+\sum_{i = 0}^{n} a_i(t) \frac{\dd[i]{y(t)}}{\dd{t^i}} &= b(t) \label{eq:linear}
+\end{align}
+where $y(t)$ is the dependent variable and $t$ is the independent variable. Since the derivative is a linear operator, every term in Eq. \ref{eq:linear} is linear in $y$. An $n$'th order linear ODE can be reduced to a system of $n$ equations by introducing substitution $y_{i+1}(t) = \frac{\dd[i]{y(t)}}{\dd{t^i}}$. Thus the system can be written in vector-matrix notation as 
+\begin{align}
+\derivative{}{t} \begin{bmatrix}
+y_1 \\ \vdots  \\\ y_n 
+\end{bmatrix}  &= 
+\begin{bmatrix}
+a_{11} & \ldots & a_{1n} \\
+\vdots & \ddots & \vdots \\
+a_{n1} & \ldots & a_{nn}
+\end{bmatrix}
+\begin{bmatrix}
+y_1 \\ \vdots  \\\ y_n \label{eq:matrix_notation}
+\end{bmatrix}
+\end{align}
+which can be equivalently written as $\vec{Y}'(t) = A \vec{Y}$. The system in Eq. \ref{eq:matrix_notation} has thus been reduced to an eigenvalue problem with the general solution with is analytical and of the form 
+\begin{align}
+\vec{Y}(t) &= \begin{bmatrix}
+c_1 e^{\lambda_1 t} \\ \vdots  \\\ c_n e^{\lambda_n t}  \label{eq:general_sol}
+\end{bmatrix}
+\end{align}
+where $\lambda$ are the eigenvalues of the matrix $A$. 
 \subsection{Linearizing a system}
 A system of linear differential equations is easy to analyze and has analytical solutions in most cases. To analyze as system of non-linear equations, the system must be linearized. 
 Let 
@@ -51,7 +76,7 @@ We can analyzing this system around these equilibrium points by making linear ap
     F(x,y) &\approx F(x_0, y_0) + F_x(x_0, y_0)(x - x_0) + F_y(x_0, y_0)(y - y_0) \\
     G(x,y) &\approx G(x_0, y_0) + G_x(x_0, y_0)(x - x_0) + G_y(x_0, y_0)(y - y_0)
 \end{align}
-Where $x_0$ and $y_0$ are the equilibrium points for the system. The system can be re-written in matrix-vector notation as 
+where $x_0$ and $y_0$ are the equilibrium points for the system. The system can be re-written in matrix-vector notation as 
 \begin{align}
     \begin{bmatrix}
     \derivative{x}{t} \\
@@ -87,7 +112,18 @@ Near the equilibrium points, the non-linear system has similar behavior to the l
 \end{enumerate}
 
 \subsection{Quantitative Analysis of a System}
+To graphically analyze a system of differential equations and get a quantitative understanding of what is happening to the system as time evolves, the nullclines can be plotted on the phase plane. 
+\begin{definition}[Nullclines \cite{diff_eq}]
+	For a system 
+	\begin{align*}
+	\derivative{x}{t} &= f(x,y) \\
+	\derivative{y}{t} &= g(x,y)
+	\end{align*}
+	the x-nullcline is the set of points $(x,y)$ where $f(x,y) = 0$ and y-nullcline is the set of points where $g(x,y) = 0$ 
+\end{definition}
 
+
+That is, $x$-nullcline are a set of points with vertical slope and $y$-nullcline are a set of points with horizontal slope. The intersection of the $x$ and $y$ nullclines is the set of points where both, the horizontal and vertical components of the slope are zero. That is, the system is not changing with respect to time at those points. Therefore, the intersection of the $x$ and $y$ nullclines gives the steady-state points of the system. By looking at the direction of the vector field around the steady-state points, the stability of the points can be determined. That is, if the vectors around the steady-state points are \emph{diverging} from it, the point is a \emph{source}. If the vectors are \emph{converging} towards it, the point is a \emph{sink}.  
 \subsection{Examples and Solutions}
 \begin{Example}{1} \cite[p.~488]{diff_eq}
 	Consider the system for $(x,y \geq 0)$
@@ -197,7 +233,7 @@ The
 	\derivative{y}{t} &= 0\\
 	\therefore y(y - x^2 ) &= 0
 	\end{align*}
-	That is, $y = 0$ and $y = x^2$. The $x$ and $y$ nullclines intersect at $(0,0)$, $(1,1)$ and $(2,0)$, which are the steady-states of the system for $(x,y \ge 0)$. Fig.\ref{fig:example2} shows the vector field and $xy$ nullclines on the phase plane. 
+	That is, $y = 0$ and $y = x^2$. The $x$ and $y$ nullclines intersect at $(0,0)$, $(1,1)$ and $(2,0)$, which are the steady-states of the system for $(x,y \ge 0)$. Figure \ref{fig:example2} shows the vector field and $xy$ nullclines on the phase plane. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim={2in 0 2in 0},width=\linewidth]{Figures/example_2}
@@ -223,19 +259,19 @@ The
 	\caption{Solution Curves and Nullclines}
 	\label{fig:example3}
 \end{figure}
-Figure \ref{fig:example3} shows the solution curves in the $xy$-plane with $t$ as an implicit parameter. The direction of the arrows shows the tendancy of the solutions as $t\rightarrow\infty$. The above system has $x$-nullclines at $x = 0$ and $x = 1$ and $y$-nullclines at $y = x^2$. The interesection points of the nullclines are the steady-states of the system. The MATLAB source code for the generated plots can be found in Listing \ref{lst:source_code}
+Figure \ref{fig:example3} shows the solution curves in the $xy$-plane with $t$ as an implicit parameter. The direction of the arrows shows the tendancy of the solutions as $t\rightarrow\infty$. The above system has $x$-nullclines at $x = 0$ and $x = 1$ and $y$-nullclines at $y = x^2$. The interesection points of the nullclines are the steady-states of the system. The MATLAB source code for the generated plots can be found in Listing \ref{lst:source_code}.
  
 \end{Example}
 \section{Hamiltonian Systems}
 \subsection{Conserved Quantities and Hamiltonians}
-\begin{definition}[\cite{diff_eq}]
+\begin{definition}[Conserved quantity \cite{diff_eq}]
 A real-valued function $H(x,y)$ of the two variables $x$ and $y$ is a conserved quantity for a system of differential equations if it is constant along all solution curves of the system. 
 \begin{align}
 \derivative{}{t}H(x(t), y(t) = 0
 \end{align}
 \end{definition}
 \newpage
-\begin{definition}
+\begin{definition}[Hamiltonian system \cite{diff_eq}]
 A system of differential equations is called a \textit{Hamiltonian system} if there exists a real-valued function $H(x,y)$ such that 
 \begin{align}
 \derivative{x}{t} &= \frac{\partial H}{\partial y} \label{ham_1} \\
@@ -267,7 +303,7 @@ If a system
 x'(t) &= f(x,y) \\
 y'(t) &= g(x,y)
 \end{align}
-is Hamiltonian, with an unknown Hamiltonian function $H(x,y)$ then, \cite{diff_eq}
+is Hamiltonian, with an unknown Hamiltonian function $H(x,y)$ then, \cite[pp. 499]{diff_eq}
 \begin{align}
 \frac{\partial f}{\partial x} &= -\frac{\partial g}{\partial y}  \\
 f(x,y) &= \frac{\partial H}{\partial y} \\
@@ -314,12 +350,6 @@ As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution
 	\label{fig:pendulum_phase}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Figures/phase_online_pendulum}
-	\caption{Solution Curves for an ideal-pendulum with different initial conditions}
-	\label{fig:pendulum_solution_curves}
-\end{figure}
 
 \subsection{Examples}
 \begin{Example}{1}
@@ -368,7 +398,7 @@ As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution
 	-2\sqrt{a} & 0
 	\end{bmatrix}
 	\end{align*} 
-	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm i \sqrt{2 \sqrt{a}}$. The phase portrait and and vector field for various values of $a$ is plotted in Figure \ref{fig:hamiltonian}
+	and the eigenvalues of the system at this point are $\lambda_{1,2} = \pm i \sqrt{2 \sqrt{a}}$. The phase portrait and and vector field for various values of $a$ is plotted in Figure \ref{fig:hamiltonian}. At $a = 0$, there is only one eigenvalue, that is, $\lambda = 0$, thus, the point $(0,0)$ has constant solutions that are independent of $t$. 
 	
 \begin{figure}[H]
 	\centering
@@ -380,7 +410,7 @@ As seen in Figure \ref{fig:pendulum_phase} and Figure \ref{fig:pendulum_solution
 
 \section{Dissipative Systems}
 \subsection{Lyapunov functions}
-\begin{definition}[\cite{diff_eq}]	
+\begin{definition}[Lyapunov functions \cite{diff_eq}]	
 A function $L(x(t), y(t)$ is called a \emph{Lyapunov function} for a system of differential equations if, for every solution $(x(t), y(t))$ that is not an equilibrium solution of the system,
 \begin{align}
 \derivative{}{t} L(x(t), y(t))  \leq 0
@@ -408,13 +438,37 @@ Since there is friction involved in the system, the system won't be Hamiltonian 
 \end{align}
 Since $\derivative{H}{t}$ is always strictly non-positive, but not zero for all solution curves, $H$ is not a Hamiltonian function, but a Lyapunov function. Physically, it means that the pendulum loses energy over time.  
 
+In Figure \ref{fig:damped_pendulum}, the phase plot of a damped pendulum shows the dissipation over time. While the Hamiltonian has a center along the steady-states, the damped pendulum has spiral-sinks, since the Lyapunov function is decreasing when $\omega \neq 0$.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/pendulum_phase_damped}
 	\caption{Phase portrait of a damped pendulum}
 	\label{fig:damped_pendulum}
 \end{figure}
-
+\subsection{Examples}
+\begin{Example}{1}
+	\cite[pp. 528]{diff_eq}
+	Given that for a damped pendulum with $l = 9.8$ \si{\meter}, $m = 1$ and $b  =  4$
+	The system describing the motion of the system is 
+	\begin{align*}
+	\derivative{\theta}{t} &= \omega \\
+	\derivative{\omega}{t} &= - 4\omega - \sin\theta
+	\end{align*}
+	The Jacobian of the system is given by 
+	\begin{align*}
+	J &= \begin{bmatrix}
+	0 & 1 \\
+	-\cos\theta & -4 
+	\end{bmatrix}
+	\end{align*}
+	Thus, the eigenvalues of the Jacobian at the equilbrium point $(0,0)$ are $\lambda_{1,2} = -2 \pm \sqrt{3}$. Since both the eigenvalues are negative and real, the point $(0,0)$ is a sink. At the point $(\pi, 0)$, the eigenvalues of the Jacobian are $\lambda_{1,2} = -2 \pm \sqrt{5}$. Since the eigenvalues are real and have opposing sides, the point $(\pi,0)$ is a saddle point. As seen in Figure \ref{fig:example_damped_pendulum}, the point $(0,0)$ is a sink and all solutions converge towards that point. The point $(\pi, 0)$ is a saddle point and the solutions diverge away from the point. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[trim={2in 0 1.5in 0}, width=\linewidth]{Figures/example_damped_pendulum}
+		\caption{Phase portrait of a damped pendulum with $m = 1$, $l = g = 9.8$ and $b = 4$}
+		\label{fig:example_damped_pendulum}
+	\end{figure}
+\end{Example}
 \section{Appendix}
 \lstinputlisting{numerical_soln.m}
 \bibliography{citations}

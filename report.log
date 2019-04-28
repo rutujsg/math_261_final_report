@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.3)  28 APR 2019 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.3)  28 APR 2019 14:19
 entering extended mode
 **./report.tex
 (report.tex
@@ -6,8 +6,8 @@ LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -698,26 +698,26 @@ LaTeX Warning: Unused global option(s):
 (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -738,12 +738,12 @@ LaTeX Font Info:    ... okay on input line 32.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=59.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -778,7 +778,7 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 \c@lstlisting=\count308
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -788,20 +788,20 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (report.out) (report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -817,17 +817,17 @@ Package epstopdf Info: Source file: <Figures/example_1.eps>
 (epstopdf)                    size: 18188 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_1-eps-conve
 rted-to.pdf Figures/example_1.eps>
-(epstopdf)             \includegraphics on input line 183.
+(epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_1-eps-converted-to.pdf, id=119, pagebox=cropbox, 721.69624pt x
+<Figures/example_1-eps-converted-to.pdf, id=120, pagebox=cropbox, 721.69624pt x
  748.7975pt>
 File: Figures/example_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/example_1-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_1-eps-converted-to.pdf  used on input 
-line 183. on input line 183.
+line 184. on input line 184.
 Package pdftex.def Info: Requested size: 469.75774pt x 399.29446pt on input lin
-e 183.
- [4] [5 <./Figures/example_1-eps-converted-to.pdf>]
+e 184.
+ [4 <./Figures/example_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/example_2.eps>
 (epstopdf)                    date: 2019-04-20 18:21:18
 (epstopdf)                    size: 129758 bytes
@@ -836,17 +836,17 @@ Package epstopdf Info: Source file: <Figures/example_2.eps>
 (epstopdf)                    size: 19174 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_2-eps-conve
 rted-to.pdf Figures/example_2.eps>
-(epstopdf)             \includegraphics on input line 239.
+(epstopdf)             \includegraphics on input line 240.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_2-eps-converted-to.pdf, id=135, pagebox=cropbox, 1445.4pt x 75
+<Figures/example_2-eps-converted-to.pdf, id=132, pagebox=cropbox, 1445.4pt x 75
 4.82pt>
 File: Figures/example_2-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/example_2-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_2-eps-converted-to.pdf  used on input 
-line 239. on input line 239.
+line 240. on input line 240.
 Package pdftex.def Info: Requested size: 469.75502pt x 306.64488pt on input lin
-e 239.
- [6]
+e 240.
+ [5]
 Package epstopdf Info: Source file: <Figures/example_3_phase.eps>
 (epstopdf)                    date: 2019-04-13 14:44:08
 (epstopdf)                    size: 169611 bytes
@@ -856,21 +856,21 @@ df>
 (epstopdf)                    size: 15840 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_3_phase-eps
 -converted-to.pdf Figures/example_3_phase.eps>
-(epstopdf)             \includegraphics on input line 258.
+(epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_3_phase-eps-converted-to.pdf, id=142, pagebox=cropbox, 1445.4p
+<Figures/example_3_phase-eps-converted-to.pdf, id=139, pagebox=cropbox, 1445.4p
 t x 756.8275pt>
 File: Figures/example_3_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/example_3_phase-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_3_phase-eps-converted-to.pdf  used on 
-input line 258. on input line 258.
+input line 259. on input line 259.
 Package pdftex.def Info: Requested size: 469.75502pt x 307.46042pt on input lin
-e 258.
- [7 <./Figures/example_2-eps-converted-to.pdf>] [8 <./Figures/example_3_phase-e
-ps-converted-to.pdf>] [9]
+e 259.
+ [6 <./Figures/example_2-eps-converted-to.pdf>] [7 <./Figures/example_3_phase-e
+ps-converted-to.pdf>] [8]
 
-LaTeX Warning: Reference `fig:pendulum_solution_curves' on page 10 undefined on
- input line 339.
+LaTeX Warning: Reference `fig:pendulum_solution_curves' on page 9 undefined on 
+input line 340.
 
 Package epstopdf Info: Source file: <Figures/pendulum_phase.eps>
 (epstopdf)                    date: 2019-04-25 22:54:24
@@ -881,22 +881,22 @@ f>
 (epstopdf)                    size: 178247 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/pendulum_phase-eps-
 converted-to.pdf Figures/pendulum_phase.eps>
-(epstopdf)             \includegraphics on input line 348.
+(epstopdf)             \includegraphics on input line 349.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pendulum_phase-eps-converted-to.pdf, id=195, pagebox=cropbox, 1445.4pt
+<Figures/pendulum_phase-eps-converted-to.pdf, id=193, pagebox=cropbox, 1445.4pt
  x 754.82pt>
 File: Figures/pendulum_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/pendulum_phase-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pendulum_phase-eps-converted-to.pdf  used on i
-nput line 348. on input line 348.
+nput line 349. on input line 349.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 348.
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 359--362
+e 349.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 360--363
 
  []
 
-[11 <./Figures/pendulum_phase-eps-converted-to.pdf>]
+[10 <./Figures/pendulum_phase-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/hamiltonian.eps>
 (epstopdf)                    date: 2019-04-22 20:53:19
 (epstopdf)                    size: 2311155 bytes
@@ -905,25 +905,17 @@ Package epstopdf Info: Source file: <Figures/hamiltonian.eps>
 (epstopdf)                    size: 287054 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/hamiltonian-eps-con
 verted-to.pdf Figures/hamiltonian.eps>
-(epstopdf)             \includegraphics on input line 405.
+(epstopdf)             \includegraphics on input line 406.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/hamiltonian-eps-converted-to.pdf, id=223, pagebox=cropbox, 1445.4pt x 
+<Figures/hamiltonian-eps-converted-to.pdf, id=220, pagebox=cropbox, 1445.4pt x 
 754.82pt>
 File: Figures/hamiltonian-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/hamiltonian-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/hamiltonian-eps-converted-to.pdf  used on inpu
-t line 405. on input line 405.
+t line 406. on input line 406.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 405.
- [12]
-Overfull \hbox (3.71764pt too wide) in paragraph at lines 414--415
-[]\OT1/cmr/m/it/12 A func-tion $\OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/i
-t/12 x\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; y\
-OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \OT1/cmr/m/it/12 is called
- a \OT1/cmr/m/n/12 Lya-punov func-
- []
-
-[13 <./Figures/hamiltonian-eps-converted-to.pdf>]
+e 406.
+ [11 <./Figures/hamiltonian-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/pendulum_phase_damped.eps>
 (epstopdf)                    date: 2019-04-27 20:31:05
 (epstopdf)                    size: 3006903 bytes
@@ -933,18 +925,18 @@ d-to.pdf>
 (epstopdf)                    size: 346842 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/pendulum_phase_damp
 ed-eps-converted-to.pdf Figures/pendulum_phase_damped.eps>
-(epstopdf)             \includegraphics on input line 444.
+(epstopdf)             \includegraphics on input line 445.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pendulum_phase_damped-eps-converted-to.pdf, id=245, pagebox=cropbox, 1
+<Figures/pendulum_phase_damped-eps-converted-to.pdf, id=233, pagebox=cropbox, 1
 445.4pt x 754.82pt>
 File: Figures/pendulum_phase_damped-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figures/pendulum_phase_damped-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pendulum_phase_damped-eps-converted-to.pdf  us
-ed on input line 444. on input line 444.
+ed on input line 445. on input line 445.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 444.
- [14 <./Figures/pendulum_phase_damped-eps-converted-to.pdf>]
+e 445.
+ [12]
 Package epstopdf Info: Source file: <Figures/example_damped_pendulum.eps>
 (epstopdf)                    date: 2019-04-28 00:05:55
 (epstopdf)                    size: 2804688 bytes
@@ -954,40 +946,42 @@ ted-to.pdf>
 (epstopdf)                    size: 325674 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/example_damped_pend
 ulum-eps-converted-to.pdf Figures/example_damped_pendulum.eps>
-(epstopdf)             \includegraphics on input line 467.
+(epstopdf)             \includegraphics on input line 468.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/example_damped_pendulum-eps-converted-to.pdf, id=259, pagebox=cropbox,
+<Figures/example_damped_pendulum-eps-converted-to.pdf, id=247, pagebox=cropbox,
  1445.4pt x 754.82pt>
 File: Figures/example_damped_pendulum-eps-converted-to.pdf Graphic file (type p
 df)
 <use Figures/example_damped_pendulum-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/example_damped_pendulum-eps-converted-to.pdf  
-used on input line 467. on input line 467.
+used on input line 468. on input line 468.
 Package pdftex.def Info: Requested size: 469.75502pt x 297.35016pt on input lin
-e 467.
-LaTeX Font Info:    Try loading font information for OT1+fvm on input line 473.
+e 468.
+ [13 <./Figures/pendulum_phase_damped-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for OT1+fvm on input line 474.
 
-LaTeX Font Info:    No file OT1fvm.fd. on input line 473.
+LaTeX Font Info:    No file OT1fvm.fd. on input line 474.
 
 
 LaTeX Font Warning: Font shape `OT1/fvm/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 473.
+(Font)              using `OT1/cmr/m/n' instead on input line 474.
 
-(numerical_soln.m [15 <./Figures/example_damped_pendulum-eps-converted-to.pdf>]
+(numerical_soln.m
 LaTeX Font Info:    Try loading font information for TS1+fvm on input line 3.
-("C:\Program Files\MiKTeX 2.9\tex\latex\bera\ts1fvm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\bera\ts1fvm.fd"
 File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
 )
 LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
 (Font)              scaled to size 5.10004pt on input line 3.
-) (report.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
+)
+(report.bbl [14 <./Figures/example_damped_pendulum-eps-converted-to.pdf>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
 
-(report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+ (report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 67C4A6E4BBA8F4F77079B8B8F427B6E1;1123.
 
@@ -997,34 +991,35 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
  ) 
 Here is how much of TeX's memory you used:
- 21465 strings out of 493312
- 390839 string characters out of 3138871
- 574493 words of memory out of 3000000
- 24680 multiletter control sequences out of 15000+200000
- 546282 words of font info for 79 fonts, out of 3000000 for 9000
+ 21455 strings out of 493312
+ 390713 string characters out of 3138871
+ 575488 words of memory out of 3000000
+ 24670 multiletter control sequences out of 15000+200000
+ 543986 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,16n,65p,792b,2124s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,16n,65p,795b,1229s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on report.pdf (16 pages, 1421321 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on report.pdf (15 pages, 1438546 bytes).
 PDF statistics:
  385 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 125 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 

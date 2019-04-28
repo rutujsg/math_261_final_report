@@ -1,4 +1,5 @@
-\documentclass[12pt,1in]{article}
+\documentclass[11pt,1in]{article}
+%\documentclass{amsart}
 \usepackage{amsmath, amssymb,amsfonts}
 \usepackage{physics}
 \usepackage[margin=1in]{geometry}
@@ -36,9 +37,9 @@
 \section{Introduction}
 A Differential Equation is an equation describing the relationship of a function and its derivatives. Differential equations can be used to model physical phenomena and predict how a system changes. Ordinary differential equations (ODE's) are differential equations involving only one independent variable. A linear differential equation is one where every term of the dependent  variable is linear. The most general form of an $n$'th order linear differential equation is 
 \begin{align}
-\sum_{i = 0}^{n} a_i(t) \frac{\dd[i]{y(t)}}{\dd{t^i}} &= b(t) \label{eq:linear}
+\sum_{i = 0}^{n} a_i(t) \frac{\dd[(i)]{y(t)}}{\dd{t^{(i)}}} &= b(t) \label{eq:linear}
 \end{align}
-where $y(t)$ is the dependent variable and $t$ is the independent variable. Since the derivative is a linear operator, every term in Eq. \ref{eq:linear} is linear in $y$. An $n$'th order linear ODE can be reduced to a system of $n$ equations by introducing substitution $y_{i+1}(t) = \frac{\dd[i]{y(t)}}{\dd{t^i}}$. Thus the system can be written in vector-matrix notation as 
+where $y(t)$ is the dependent variable and $t$ is the independent variable. Since the derivative is a linear operator, every term in Eq. \ref{eq:linear} is linear in $y$. An $n$'th order linear ODE can be reduced to a system of $n$ equations by introducing substitution $y_{i+1}(t) = \frac{\dd[(i)]{y(t)}}{\dd{t^{(i)}}}$. Thus the system can be written in vector-matrix notation as 
 \begin{align}
 \derivative{}{t} \begin{bmatrix}
 y_1 \\ \vdots  \\\ y_n 
